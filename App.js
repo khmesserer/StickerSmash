@@ -5,6 +5,10 @@ import { useState, useRef } from 'react';
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import * as MediaLibrary from 'expo-media-library';
 import { captureRef } from 'react-native-view-shot';
+import * as SplashScreen from 'expo-splash-screen';
+
+SplashScreen.preventAutoHideAsync();
+setTimeout(SplashScreen.hideAsync, 5000);
 
 import Button from './components/Buttons';
 import ImageViewer from './components/ImageViewer';
